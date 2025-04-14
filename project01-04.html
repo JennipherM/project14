@@ -39,6 +39,7 @@
                <input type="radio" id="homeoption" name="shippingaddr" onclick = "Click()"/>
                <script>
                   function Click() {
+                     //assigns each element to a variable
                      document.getElementById("street") = homestreet
                      document.getElementById("city") = homeCity
                      document.getElementById("homeState") = homeState
@@ -50,7 +51,13 @@
                <div>Work</div>
                <!--Add an onlick to the input-->
                <input type="radio" id="workoption" name="shippingaddr" onclick="Click2()"/>
-               <script></script>
+               <script>function Click2() {
+                  //assigns each element to a variable
+                  document.getElementById("workStreet") = workStreet
+                  document.getElementById("workCity") = workCity
+                  document.getElementById("workState") = workState
+                  document.getElementById("workCode") = workCode
+               }</script>
             </label>
          </fieldset>
          
